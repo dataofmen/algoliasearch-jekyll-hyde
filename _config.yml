@@ -9,8 +9,8 @@ permalink:        pretty
 title:            moo99
 tagline:          'personal log'
 description:      're-view life'
-url:              http://moo99.github.io
-baseurl:          http://moo99.github.io
+url:              http://moo99.github.io/
+baseurl:          
 
 author:
   name:           'Jack Kwon'
