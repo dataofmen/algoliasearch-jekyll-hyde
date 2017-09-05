@@ -10,7 +10,7 @@ title:            moo99
 tagline:          'personal log'
 description:      're-view life'
 url:              http://moo99.github.io/
-baseurl:          
+baseurl:          /
 
 author:
   name:           'Jack Kwon'
