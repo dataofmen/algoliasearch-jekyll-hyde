@@ -1,20 +1,27 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
+markdown:         redcarpet
+highlighter:      pygments
 
 # Permalinks
-permalink:        date
+permalink:        pretty
 
 # Setup
-title:            moo99
-tagline:          'personal log'
-description:      're-view life'
-url:              http://moo99.github.io/
-baseurl:          /
+title:            Hyde
+tagline:          'A Jekyll theme, with instant search'
+description:      'The popular <a href="http://hyde.getpoole.com/" target="_blank">Hyde theme</a> for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, now with instant-search capabilities. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://www.algolia.com/" target="_blank">Algolia</a>'
+url:              https://dataofmen.github.io/
+baseurl:          
+# Travis will install Bundler dependencies in ./vendor, so we need to exclude it
+# otherwise Jekyll will try to build it (and fail)
+exclude:          [vendor]
 
 author:
-  name:           'Jack Kwon'
-  url:            https://twitter.com/kwonhyuckmin
+  name:           'Algolia'
+  url:            https://dataofmen.github.io/
+# Thanks to @mdo for the original theme
+# author:
+#   name:           'Mark Otto'
+#   url:            https://twitter.com/mdo
 
 paginate:         5
 
@@ -22,4 +29,16 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/moo99
+    repo:         https://github.com/algolia/algoliasearch-jekyll-hyde
+
+# Algolia
+gems:
+  - algoliasearch-jekyll
+
+algolia:
+  application_id: '8WBB8KCA51'
+  index_name: 'jekyll'
+  read_only_api_key: '659fa2a9fcaf1c1955a679da9b6fe12e'
+  excluded_files:
+    - 404.html
+    - index.html
